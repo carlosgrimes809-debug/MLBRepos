@@ -1,0 +1,6 @@
+git init
+git add gather_data.py
+git commit -m "Initial commit: Added data gathering script for AllStar dataset"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git push -u origin main
