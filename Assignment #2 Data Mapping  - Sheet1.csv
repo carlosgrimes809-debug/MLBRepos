@@ -1,0 +1,8 @@
+Source Field (Staging),Destination Table,Destination Field,Transformation Logic
+game_date,Dim_Date,full_date,Cast to YYYY-MM-DD
+game_date,Dim_Date,"year, month, day",Split date parts
+player_name,Dim_Player,player_name,Distinct list of players
+events,Fact_Statcast,event_result,Replace NULL with 'Unknown'
+release_speed,Fact_Statcast,release_speed,Cast to decimal
+launch_speed,Fact_Statcast,launch_speed,Cast to decimal
+home_team,Dim_Team,team_code,Distinct team codes
